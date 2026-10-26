@@ -1,0 +1,367 @@
+
+logo{ 
+    text-align: right;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #263238;
+    background-color: #ffffff;
+}
+
+a {
+    color: #087f8c;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #ffbf47;
+    outline-offset: 3px;
+}
+
+/* Header */
+header {
+    background-color: #087f8c;
+    color: white;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe082;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 380px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(120deg, #d8f3f4, #edf8ff);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    color: #075b66;
+    margin-bottom: 18px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #087f8c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 13px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #055b65;
+}
+
+/* Emergency Section */
+.emergency {
+    background-color: #b3261e;
+    color: white;
+    padding: 22px 5%;
+    text-align: center;
+}
+
+.emergency h2 {
+    margin-bottom: 8px;
+}
+
+.emergency a {
+    color: white;
+    font-weight: bold;
+}
+
+/* Common Sections */
+.section {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #087f8c;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #59666b;
+    margin-bottom: 30px;
+}
+
+.light-bg {
+    background-color: #f1f8fa;
+}
+
+/* Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.card,
+.doctor-card {
+    background-color: white;
+    padding: 25px 18px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.card:hover,
+.doctor-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon,
+.doctor-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.card h3,
+.doctor-card h3 {
+    color: #075b66;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.doctor-card p {
+    margin: 8px 0;
+}
+
+.doctor-card p:first-of-type {
+    color: #087f8c;
+    font-weight: bold;
+}
+
+.note {
+    color: #59666b;
+    font-size: 13px;
+    margin-top: 18px;
+}
+
+/* Specialties */
+.specialty-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    max-width: 900px;
+    margin: 25px auto 0;
+}
+
+.specialty-list div {
+    background-color: #e2f4f4;
+    border-left: 4px solid #087f8c;
+    border-radius: 5px;
+    padding: 16px;
+    text-align: left;
+}
+
+/* Visiting Hours and Contact */
+.hours-box,
+.contact-box {
+    max-width: 700px;
+    margin: 25px auto 0;
+    padding: 25px;
+    background-color: #f7fbfc;
+    border: 1px solid #d7e8eb;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.hours-box p,
+.contact-box p {
+    padding: 8px 0;
+}
+
+/* Appointment Form */
+.appointment-form {
+    max-width: 650px;
+    margin: 25px auto 0;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #263238;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #9aaeb3;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+    background-color: white;
+    color: #263238;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.appointment-form .btn {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #064c55;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Tablet Layout */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .specialty-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+    .logo {
+        font-size: 22px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 60px 6%;
+        min-height: 320px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 40px 5%;
+    }
+
+    .section h2 {
+        font-size: 27px;
+    }
+
+    .card-container,
+    .specialty-list {
+        grid-template-columns: 1fr;
+    }
+
+    .appointment-form {
+        padding: 20px;
+    }
+
+    .emergency {
+        padding: 20px 10px;
+    }
+}
+
+/* Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}

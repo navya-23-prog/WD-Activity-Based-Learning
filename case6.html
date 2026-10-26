@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Online Shopping</title>
+    <link rel="stylesheet" href="case6.css">
+</head>
+<body>
+
+    <!-- Shopping Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Shop<span>Ease</span></h1>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search for products...">
+                <button type="button">Search</button>
+            </div>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#products">Products</a>
+                <a href="#footer">Contact</a>
+                <a href="#products" class="cart">🛒 Cart</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Promotional Banner -->
+    <section class="banner" id="home">
+        <div class="banner-content">
+            <p class="offer-tag">MEGA SHOPPING FESTIVAL</p>
+            <h2>Big Deals.<br>Better Choices.</h2>
+            <p>Discover amazing products at unbelievable prices!</p>
+            <h3>UP TO 60% OFF</h3>
+            <a href="#products" class="shop-btn">Shop Now →</a>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <h2 class="section-title">Shop by Category</h2>
+
+        <div class="category-list">
+            <a href="#electronics" class="category">
+                <span><img src="electronics.avif" width="250" height="250" alt="Electronics"></span>
+                <h3>Electronics</h3>
+            </a>
+
+            <a href="#fashion" class="category">
+                <span><img src="fashion.webp" width="250" height="250" alt="Fashion"></span>
+                <h3>Fashion</h3>
+            </a>
+
+            <a href="#home-products" class="category">
+                <span><img src="home.webp" width="250" height="250" alt="Home"></span>
+                <h3>Home</h3>
+            </a>
+
+            <a href="#foot-ware" class="category">
+                <span><img src="foot.jpg" width="250" height="250" alt="Footwear"></span>
+                <h3>Footwear</h3>
+            </a>
+
+            <a href="#mobiles" class="category">
+                <span><img src="mobiles.jpg" width="250" height="250" alt="Mobiles"></span>
+                <h3>Mobiles</h3>
+            </a>
+
+            <a href="#beauty" class="category">
+                <span><img src="Beauty.webp" width="250" height="250" alt="Beauty"></span>
+                <h3>Beauty</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Products Section -->
+    <section class="products-section" id="products">
+        <h2 class="section-title">Featured Products</h2>
+        <p class="section-subtitle">
+            Explore our best-selling products at special prices.
+        </p>
+
+        <!-- Electronics Products -->
+        <h3 class="category-heading" id="electronics">Electronics</h3>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">30% OFF</span>
+                    <img src="Refridge.webp" alt="Refrigerator">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Electronics</p>
+                    <h3>Refrigerator</h3>
+                    <p class="description">
+                        Stylish refrigerator with high-quality performance and efficiency.
+                    </p> 
+                    <p class="rating">★★★★★ <span>(4.5)</span></p>
+                    <p class="price">₹54,999 <del>₹71,499</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Refrigerator added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">25% OFF</span>
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" alt="Wireless headphones">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Electronics</p>
+                    <h3>Wireless Headphones</h3>
+                    <p class="description">
+                        Enjoy immersive sound and comfortable listening with wireless headphones.
+                    </p>
+                    <p class="rating">★★★★★ <span>(4.3)</span></p>
+                    <p class="price">₹1,499 <del>₹1,999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Headphones added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">20% OFF</span>
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Smart wristwatch">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Electronics</p>
+                    <h3>Smart Wristwatch</h3>
+                    <p class="description">
+                        Track your daily activities with a stylish smartwatch and useful features.
+                    </p>
+                    <p class="rating">★★★★☆ <span>(4.1)</span></p>
+                    <p class="price">₹2,399 <del>₹2,999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Smart wristwatch added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">20% OFF</span>
+                    <img src="BRC05_1.webp" alt="Electric rice cooker">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Electronics</p>
+                    <h3>Electric Rice Cooker</h3>
+                    <p class="description">
+                        Cook meals easily with a fast and efficient electric rice cooker.
+                    </p>
+                    <p class="rating">★★★★☆ <span>(4.1)</span></p>
+                    <p class="price">₹3,399 <del>₹4,999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Electric rice cooker added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">20% OFF</span>
+                    <img src="grindere.jpg" alt="Grinder">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Electronics</p>
+                    <h3>Grinder</h3>
+                    <p class="description">
+                        Powerful motor grinder for smooth and quick kitchen grinding.
+                    </p>
+                    <p class="rating">★★★★☆ <span>(4.1)</span></p>
+                    <p class="price">₹5,399 <del>₹6,999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Grinder added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fashion Products -->
+        <h3 class="category-heading" id="fashion">Fashion</h3>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">40% OFF</span>
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80" width="300" height="300" alt="Casual cotton T-shirt">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Fashion</p>
+                    <h3>Casual T-Shirt</h3>
+                    <p class="description">
+                        Comfortable everyday cotton T-shirt with a simple and modern style.
+                    </p>
+                    <p class="rating">★★★★★ <span>(4.6)</span></p>
+                    <p class="price">₹599 <del>₹999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('T-Shirt added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">40% OFF</span>
+                    <img src="frock.jpg" width="300" height="300" alt="Casual frock">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Fashion</p>
+                    <h3>Casual Frock</h3>
+                    <p class="description">
+                        Comfortable everyday frock with a simple and modern style.
+                    </p>
+                    <p class="rating">★★★★★ <span>(4.6)</span></p>
+                    <p class="price">₹499 <del>₹999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Frock added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">40% OFF</span>
+                    <img src="party.jpg" width="300" height="300" alt="Party wear lehenga">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Fashion</p>
+                    <h3>Party Wear Lehenga</h3>
+                    <p class="description">
+                        Comfortable party wear lehenga with a soft and modern style.
+                    </p>
+                    <p class="rating">★★★★★ <span>(4.6)</span></p>
+                    <p class="price">₹2,999 <del>₹3,999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Lehenga added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">40% OFF</span>
+                    <img src="kurti.jpg" width="300" height="300" alt="Kurti set">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Fashion</p>
+                    <h3>3-Piece Kurti Set</h3>
+                    <p class="description">
+                        Comfortable 3-piece kurti set with a soft and modern style.
+                    </p>
+                    <p class="rating">★★★★★ <span>(4.6)</span></p>
+                    <p class="price">₹999 <del>₹1,999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Kurti added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">40% OFF</span>
+                    <img src="wedding.jpg" width="300" height="300" alt="Wedding frock">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Fashion</p>
+                    <h3>Wedding Frock</h3>
+                    <p class="description">
+                        Elegant wedding frock with detailed stonework and modern design.
+                    </p>
+                    <p class="rating">★★★★★ <span>(4.6)</span></p>
+                    <p class="price">₹8,999 <del>₹9,999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Frock added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Home & Living Products -->
+        <h3 class="category-heading" id="home-products">Home & Living</h3>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">15% OFF</span>
+                    <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=80" alt="Modern decorative table lamp">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Home & Living</p>
+                    <h3>Decorative Lamp</h3>
+                    <p class="description">
+                        Add warmth and elegance to your room with this modern decorative lamp.
+                    </p>
+                    <p class="rating">★★★★☆ <span>(4.0)</span></p>
+                    <p class="price">₹849 <del>₹999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Lamp added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">40% OFF</span>
+                    <img src="home 1.jpg" width="300" height="300" alt="Wall decorative">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Home & Living</p>
+                    <h3>Wall Decorative</h3>
+                    <p class="description">
+                        Add warmth and elegance to your room with this modern decorative wall frame.
+                    </p>
+                    <p class="rating">★★★★☆ <span>(4.0)</span></p>
+                    <p class="price">₹849 <del>₹999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Wall frame added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">40% OFF</span>
+                    <img src="home 2.jpg" width="300" height="300" alt="Decorative metal horse">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Home & Living</p>
+                    <h3>Decorative Metal Horse</h3>
+                    <p class="description">
+                        Add a royal touch to your living room.
+                    </p>
+                    <p class="rating">★★★★☆ <span>(4.0)</span></p>
+                    <p class="price">₹849 <del>₹999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Metal horse added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">40% OFF</span>
+                    <img src="home5.jpg" width="300" height="300" alt="Decorative woolen wall hanger">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Home & Living</p>
+                    <h3>Woolen Wall Hanger</h3>
+                    <p class="description">
+                        Gives a cozy and pleasing look to your room.
+                    </p>
+                    <p class="rating">★★★★☆ <span>(4.0)</span></p>
+                    <p class="price">₹449 <del>₹699</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Woolen wall hanger added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">40% OFF</span>
+                    <img src="home 4.jpg" width="300" height="300" alt="Wooden wall hanger">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Home & Living</p>
+                    <h3>Wooden Wall Hanger</h3>
+                    <p class="description">
+                       Adds positive energy to your home.
+                    </p>
+                    <p class="rating">★★★★☆ <span>(4.0)</span></p>
+                    <p class="price">₹249 <del>₹399</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Wooden wall hanger added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footwear Products -->
+        <h3 class="category-heading" id="foot-ware">Footwear</h3>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">35% OFF</span>
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Red sports shoes">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Footwear</p>
+                    <h3>Sports Shoes</h3>
+                    <p class="description">
+                        Lightweight sports shoes designed for comfort during walking and workouts.
+                    </p>
+                    <p class="rating">★★★★★ <span>(4.4)</span></p>
+                    <p class="price">₹1,949 <del>₹2,999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Sports Shoes added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">35% OFF</span>
+                    <img src="heels.jpg" alt="Party wear heels">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Footwear</p>
+                    <h3>Heels</h3>
+                    <p class="description">
+                        High heels for party wear that highlight your outfit.
+                    </p>
+                    <p class="rating">★★★★★ <span>(4.4)</span></p>
+                    <p class="price">₹1,949 <del>₹2,899</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Heels added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">35% OFF</span>
+                    <img src="flip flops.jpg" alt="Black flip flops">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Footwear</p>
+                    <h3>Flip Flops</h3>
+                    <p class="description">
+                        Lightweight flip flops designed for daily walking comfort.
+                    </p>
+                    <p class="rating">★★★★★ <span>(4.4)</span></p>
+                    <p class="price">₹849 <del>₹999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Flip Flops added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">51% OFF</span>
+                    <img src="slippers.jpg" alt="Biscutie white flats">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Footwear</p>
+                    <h3>Flats</h3>
+                    <p class="description">
+                        Lightweight flats designed for comfort and daily wear.
+                    </p>
+                    <p class="rating">★★★★★ <span>(4.4)</span></p>
+                    <p class="price">₹299 <del>₹499</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Flats added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">35% OFF</span>
+                    <img src="fancy.jpg" alt="Gold classic flats">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Footwear</p>
+                    <h3>Fancy Flats</h3>
+                    <p class="description">
+                        Provides a royal look and comfortable feel for parties.
+                    </p>
+                    <p class="rating">★★★★★ <span>(4.4)</span></p>
+                    <p class="price">₹899 <del>₹999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Fancy flats added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beauty Products -->
+        <h3 class="category-heading" id="beauty">Beauty</h3>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">40% OFF</span>
+                    <img src="lipstick.webp" width="300" height="300" alt="lipstick">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Beauty</p>
+                    <h3>Liquid Lipstick</h3>
+                    <p class="description">
+                        Customized Insight Liquid Lipstick and long lasting.
+                    </p>
+                    <p class="rating">★★★★★ <span>(4.6)</span></p>
+                    <p class="price">₹309 <del>₹409</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Lipstick added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">40% OFF</span>
+                    <img src="face compact.webp" width="300" height="300" alt="Matte Finish Compact Powder">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Beauty</p>
+                    <h3>Matte Finish Compact Powder</h3>
+                    <p class="description">
+                        FACES CANADA Weightless Stay Matte Finish Compact Powder - Natural, 9 gm.
+                    </p>
+                    <p class="rating">★★★★★ <span>(4.6)</span></p>
+                    <p class="price">₹199 <del>₹299</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Matte Finish Compact Powder added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">40% OFF</span>
+                    <img src="Makeup kit.webp" alt="Makeup kit">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Beauty</p>
+                    <h3>Makeup Kit Combo Set</h3>
+                    <p class="description">
+                        Huda.Bb Makeup Kit Combo Set With All Products For Girls & Women 01
+                    </p>
+                    <p class="rating">★★★★★ <span>(4.6)</span></p>
+                    <p class="price">₹799 <del>₹999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Makeup kit added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">40% OFF</span>
+                    <img src="Hydra matta foundation.webp" alt="Hydra matte foundation">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Beauty</p>
+                    <h3>Hydra Matte Foundation</h3>
+                    <p class="description">
+                        Faces Canada 3 In 1 All Day Hydra Matte Foundation.
+                    </p>
+                    <p class="rating">★★★★★ <span>(4.6)</span></p>
+                    <p class="price">₹499 <del>₹599</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Foundation added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">40% OFF</span>
+                    <img src="acid.webp" alt="Renee Face Gloss">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Beauty</p>
+                    <h3>Renee Face Gloss</h3>
+                    <p class="description">
+                        Renee Face Gloss with Hyaluronic Acid.
+                    </p>
+                    <p class="rating">★★★★★ <span>(4.6)</span></p>
+                    <p class="price">₹403 <del>₹545</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Renee Face Gloss added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobiles Products -->
+        <h3 class="category-heading" id="mobiles">Mobiles</h3>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">30% OFF</span>
+                    <img src="one.jpg" alt="one plus">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Mobiles</p>
+                    <h3>OnePlus Nord</h3>
+                    <p class="description">
+                        OnePlus Nord | 8GB+256GB | Quick Silver | Segment's Largest Battery & AI Support.
+                    </p> 
+                    <p class="rating">★★★★★ <span>(4.5)</span></p>
+                    <p class="price">₹45,999 <del>₹55,499</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('OnePlus Nord added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">30% OFF</span>
+                    <img src="vivo1.jpg" alt="Vivo Y51 pro 5G">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Mobiles</p>
+                    <h3>Vivo Y51 Pro 5G</h3>
+                    <p class="description">
+                        Vivo Y51 Pro 5G (Crimson Red, 8GB RAM, 128GB Storage) with No Cost EMI options.
+                    </p> 
+                    <p class="rating">★★★★★ <span>(4.5)</span></p>
+                    <p class="price">₹34,999 <del>₹54,999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Vivo Y51 Pro 5G added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">30% OFF</span>
+                    <img src="i phone.jpg" alt="iPhone 17 Pro">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Mobiles</p>
+                    <h3>iPhone 17 Pro</h3>
+                    <p class="description">
+                        Pre-Order iPhone 17 Pro & Pro Max in 24k Gold, Rose Gold, and Platinum.
+                    </p> 
+                    <p class="rating">★★★★★ <span>(4.5)</span></p>
+                    <p class="price">₹54,999 <del>₹3,99,999</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('iPhone 17 Pro added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">30% OFF</span>
+                    <img src="Edge.webp" alt="Motorola Edge">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Mobiles</p>
+                    <h3>Motorola Edge</h3>
+                    <p class="description">
+                       Motorola Edge 60 Fusion 8GB + 256GB performance variant.
+                    </p>       
+                    <p class="rating">★★★★★ <span>(4.5)</span></p>
+                    <p class="price">₹44,999 <del>₹51,499</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Motorola Edge added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">30% OFF</span>
+                    <img src="OPPO1.jpg" alt="Oppo Reno14 5G">
+                </div>
+                <div class="product-info">
+                    <p class="category-name">Mobiles</p>
+                    <h3>Oppo Reno14 5G</h3>
+                    <p class="description">
+                        Premium camera smartphone with sleek glass design and fast charging.
+                    </p> 
+                    <p class="rating">★★★★★ <span>(4.5)</span></p>
+                    <p class="price">₹42,999 <del>₹51,499</del></p>
+                    <button class="buy-btn" type="button" onclick="alert('Oppo Reno14 5G added to cart!')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer Banner -->
+    <section class="offer-banner">
+        <div>
+            <p>LIMITED-TIME OFFER</p>
+            <h2>Upgrade Your Lifestyle!</h2>
+            <p>Find your favourites at prices you'll love.</p>
+        </div>
+        <a href="#products" class="offer-btn">Explore Deals</a>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div>
+            <span> <img src="fast delivery.jpg" width="100" height="100" alt="Easy Returns></span>
+            <h3>Fast Delivery</h3>
+            <p>Convenient delivery to your doorstep.</p>
+        </div>
+
+        <div>
+            <span> <img src="Secure Shopping.jpg" width="100" height="100" alt="Secure Shopping"></span>
+            <h3>Secure Shopping</h3>
+            <p>Shop with confidence and care.</p>
+        </div>
+
+        <div>
+            <span><img src="easy returns.jpg" width="100" height="100" alt="Easy Returns"></span>
+            <h3>Easy Returns</h3>
+            <p>Simple returns on eligible products.</p>
+        </div>
+
+        <div>
+            <span><img src="Customer Support.jpg" width="100" height="100" alt="Customer Support"></span>
+            <h3>Customer Support</h3>
+            <p>We are here to help you.</p>
+        </div>
+
+        <div>
+            <span><img src="Free delivery.png" width="100" height="100" alt="Free Delivery"></span>
+            <h3>Free Delivery</h3>
+            <p>We provide free delivery.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <h2>Shop<span>Ease</span></h2>
+        <p>Your favourite products, all in one place.</p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#products">Products</a>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 ShopEase. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
